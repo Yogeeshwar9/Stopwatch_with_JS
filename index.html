@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer Example</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c41d98b7a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="#home"><i class="fa-solid fa-stopwatch"></i>Stopwatch</a></li>
+        <li style="float:right"><a>Calendar</a></li>
+        <li style="float:right"><a>Clock</a></li>
+        <li style="float:right"><a>Timer</a></li>
+        <li style="float:right"><a>Home</a></li>
+    </ul>
+    <br>
+    <div style="height: fit-content;width: fit-content;background-color: rgb(6, 6, 58);margin-left: 30px;">
+        <a href="#instructions" style="color: white;">Click here for instructions</a>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box" id="days">00<br>Days</div>
+        <div class="box" id="hours">00<br>Hours</div>
+        <div class="box" id="mins">00<br>Minutes</div>
+        <div class="box" id="secs">00<br>Seconds</div>
+    </div>
+
+    <input type="number" id="daysInput" class="box1" min="0">
+    <input type="number" id="hoursInput" class="box1" min="0">
+    <input type="number" id="minutesInput" class="box1" min="0">
+    <input type="number" id="secondsInput" class="box1" min="0">
+
+    <div id="mainBox"></div>
+
+    <div class="button-container">
+        <button id="setTimerButton" class="blue">Set Timer</button>
+        <button id="startResumeButton" class="violet">Start/Resume</button>
+        <button id="pauseButton" class="skyblue">Pause</button>
+        <button id="resetButton" class="red">Reset</button>
+    </div>
+    <script src="script.js"></script>
+
+    <h2 id="instructions" style="background-color: rgb(6, 6, 58);color: white;padding-left: 20px;margin-top: 80px;margin-bottom: 0;">Instructions
+        <ol style="background-color: rgb(6, 6, 58);color: white;font-size: large;margin-bottom: 0;">
+            <li>Enter the values in the inputs.</li><br>
+            <li>Press the SetTimer Button to set the timer.</li><br>
+            <li>Press the Start/Resume Button to start the timer.</li><br>
+            <li>Pause the Timer if you want to pause.</li><br>
+            <li>Press the Start/Resume Button to resume the timer.</li><br>
+            <li>Press the Reset Button to reset the values.</li><br>
+        </ol>
+    </h2>
+</body>
+</html>
